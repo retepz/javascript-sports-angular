@@ -1,0 +1,103 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  @media (prefers-color-scheme: dark) {
+    color-scheme: dark;
+    font-family: 'Lucida Console', 'Courier New', monospace;
+    margin: 0;
+  }
+}
+
+a,
+a:visited {
+  color: inherit;
+}
+
+.loading {
+  width: 50px;
+  --b: 8px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: #514b82;
+  -webkit-mask:
+    repeating-conic-gradient(#0000 0deg, #000 1deg 70deg, #0000 71deg 90deg),
+    radial-gradient(
+      farthest-side,
+      #0000 calc(100% - var(--b) - 1px),
+      #000 calc(100% - var(--b))
+    );
+  -webkit-mask-composite: destination-in;
+  mask-composite: intersect;
+  animation: l5 1s infinite;
+}
+@keyframes l5 {
+  to {
+    transform: rotate(0.5turn);
+  }
+}
+
+header {
+  height: 5rem;
+  background-color: #2f0259;
+  margin-bottom: 0.5rem;
+  display: grid;
+}
+
+.header-logo-container {
+  align-self: center;
+  display: flex;
+  margin-left: 0.5rem;
+}
+
+.header-logo-container img {
+  width: 4rem;
+}
+
+.header-logo-container div {
+  align-content: center;
+  font-size: 1.5rem;
+}
+
+nav {
+  flex-shrink: 0;
+}
+
+nav,
+nav > * {
+  font-size: 1.2rem;
+  width: 11rem;
+  max-width: 11rem;
+  border-right: 0.1rem solid #a8acbd;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.nav-item-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-item {
+  display: flex;
+  margin: 1rem 1rem 1rem 0.5rem;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+}
+
+main {
+  flex-grow: 1;
+}
+
+main > * {
+  display: grid;
+  row-gap: 1.5rem;
+  margin: 1rem;
+}
+
+router-outlet {
+  display: none;
+}

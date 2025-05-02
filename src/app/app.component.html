@@ -1,0 +1,23 @@
+<header>
+  <div class="header-logo-container">
+    <img alt="React Sports Logo" src="/images/logo.svg" />
+    <div style="">
+      <div>Sports</div>
+      <div>React</div>
+    </div>
+  </div>
+</header>
+<div class="main-container">
+  <nav>
+    <div class="nav-item-container">
+      @for (sportType of allSportTypes; track sportType) {
+        <a class="nav-item" routerLink="/sports/{{ sportType }}/leagues">{{
+          sportType
+        }}</a>
+      }
+    </div>
+  </nav>
+  <main>
+    <router-outlet />
+  </main>
+</div>

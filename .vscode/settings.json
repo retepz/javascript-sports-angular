@@ -1,0 +1,22 @@
+{
+    "css.validate": false,
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "explicit"
+    },
+    "files.eol": "\n",
+    "[json]": {
+      "editor.formatOnSave": true,
+      "files.insertFinalNewline": true
+    },
+    "workbench.colorCustomizations": {
+      "titleBar.activeBackground": "#80CBC4",
+      "titleBar.inactiveBackground": "#05C3DDCC",
+      "titleBar.activeForeground": "#181a27",
+      "titleBar.inactiveForeground": "#181a27cc"
+    },
+    "typescript.tsdk": "node_modules/typescript/lib"
+  }
+  
