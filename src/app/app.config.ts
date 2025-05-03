@@ -15,7 +15,7 @@ import environment from '../environment'
 
 const generateRouterFeatures = (): RouterFeatures[] => {
   const base: RouterFeatures[] = [withComponentInputBinding()]
-  if (environment.name === 'production') {
+  if (environment.useHashRouter) {
     return [...base, withHashLocation()]
   }
   return base
