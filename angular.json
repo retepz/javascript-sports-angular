@@ -13,7 +13,6 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "baseHref": "/javascript-sports-angular",
             "outputPath": "dist",
             "index": "src/index.html",
             "browser": "src/main.ts",
@@ -30,6 +29,8 @@
           },
           "configurations": {
             "production": {
+              "deployUrl": "/javascript-sports-angular/",
+              "baseHref": "/javascript-sports-angular/",
               "budgets": [
                 {
                   "type": "initial",
