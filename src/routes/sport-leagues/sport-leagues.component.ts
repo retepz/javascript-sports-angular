@@ -1,6 +1,5 @@
 import {
   Component,
-  inject,
   Input,
   OnChanges,
   OnInit,
@@ -25,9 +24,11 @@ import { RouterLink } from '@angular/router'
 export class SportLeaguesComponent implements OnInit, OnChanges {
   @Input() sport!: SportTypes
   getLeaguesResponse!: Observable<SportLeaguesResponse>
-  private sportLeaguesService = inject(SportLeaguesService)
 
-  constructor(private title: Title) {}
+  constructor(
+    private title: Title,
+    private sportLeaguesService: SportLeaguesService,
+  ) {}
 
   ngOnChanges(changes: SimpleChanges): void {
     const newSportChange = changes['sport']
