@@ -2,8 +2,8 @@
   "name": "javascript-sports-angular",
   "version": "0.0.0",
   "scripts": {
-    "cp:local": "shx cp ./src/environments/local/environment.ts ./src/environments/environment.ts",
-    "cp:prod": "shx cp ./src/environments/production/environment.ts ./src/environments/environment.ts",
+    "cp:local": "shx cp ./src/environments/local/environment.ts ./src/environment.ts",
+    "cp:prod": "shx cp ./src/environments/production/environment.ts ./src/environment.ts",
     "ng": "ng",
     "start": "npm run cp:local && ng serve",
     "build": "npm run cp:local && ng build",
