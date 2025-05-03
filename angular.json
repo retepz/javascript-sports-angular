@@ -29,8 +29,6 @@
           },
           "configurations": {
             "production": {
-              "deployUrl": "/javascript-sports-angular/",
-              "baseHref": "/javascript-sports-angular/",
               "budgets": [
                 {
                   "type": "initial",
