@@ -1,9 +1,8 @@
 import { HttpClient } from '@angular/common/http'
 import { inject, Injectable } from '@angular/core'
-import { Observable } from 'rxjs'
-import environment from '../../environment'
 import { SportLeague } from '@src/types/sport-league'
 import { SportTypes } from '@src/types/sport-type'
+import environment from '../../../environment'
 
 export interface SportLeaguesResponse {
   leagues: SportLeague[]
@@ -13,7 +12,7 @@ export interface SportLeaguesResponse {
 export class SportLeaguesService {
   private http = inject(HttpClient)
 
-  getLeagues(sport: SportTypes): Observable<SportLeaguesResponse> {
+  getLeagues(sport: SportTypes) {
     return this.http.get<SportLeaguesResponse>(
       `${environment.api}/api/sports/${sport}/leagues`,
     )

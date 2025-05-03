@@ -1,0 +1,17 @@
+.league-item {
+  display: flex;
+  flex-direction: row;
+  min-height: 3rem;
+}
+
+img {
+  flex-shrink: 0;
+  width: 3.5rem;
+  align-self: center;
+  margin-right: 2rem;
+}
+
+a {
+  font-size: 1.5rem;
+  align-self: center;
+}

@@ -3,6 +3,7 @@ import tseslint from 'typescript-eslint'
 import angular from 'angular-eslint' // https://github.com/angular-eslint/angular-eslint/blob/main/packages/angular-eslint/src/configs/README.md
 import { defineConfig } from 'eslint/config'
 import prettier from 'eslint-plugin-prettier'
+import pluginQuery from '@tanstack/eslint-plugin-query'
 
 export default defineConfig([
   {
@@ -12,6 +13,7 @@ export default defineConfig([
       ...tseslint.configs.recommended,
       ...tseslint.configs.stylistic,
       ...angular.configs.tsRecommended,
+      ...pluginQuery.configs['flat/recommended'],
     ],
     processor: angular.processInlineTemplates,
     plugins: {

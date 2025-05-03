@@ -6,6 +6,7 @@
     "cp:prod": "shx cp ./src/environments/production/environment.ts ./src/environment.ts",
     "ng": "ng",
     "start": "npm run cp:local && ng serve",
+    "start:prod": "npm run cp:prod && ng serve",
     "build": "npm run cp:local && ng build",
     "build:prod": "npm run cp:prod && ng build",
     "watch": "npm run cp:local && ng build --watch --configuration development",
@@ -23,6 +24,7 @@
     "@angular/platform-browser": "^19.2.0",
     "@angular/platform-browser-dynamic": "^19.2.0",
     "@angular/router": "^19.2.0",
+    "@tanstack/angular-query-experimental": "^5.75.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.15.0"
@@ -33,6 +35,7 @@
     "@angular-devkit/build-angular": "^19.2.10",
     "@angular/cli": "^19.2.10",
     "@angular/compiler-cli": "^19.2.0",
+    "@tanstack/eslint-plugin-query": "^5.74.7",
     "@types/jasmine": "~5.1.0",
     "eslint": "^9.25.1",
     "eslint-plugin-prettier":"^5.2.6",

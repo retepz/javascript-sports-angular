@@ -6,6 +6,7 @@
     "editor.codeActionsOnSave": {
       "source.fixAll": "explicit"
     },
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "files.eol": "\n",
     "[json]": {
       "editor.formatOnSave": true,

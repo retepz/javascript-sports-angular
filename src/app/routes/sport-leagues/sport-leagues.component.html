@@ -1,0 +1,20 @@
+@if (getLeagues.isFetching()) {
+  <div class="loading"></div>
+}
+
+@if (getLeagues.data(); as leagueResponse) {
+  @for (league of leagueResponse.leagues; track league.id) {
+    @if (
+      league.displayName !== null &&
+      league.displayName !== '' &&
+      league.leagueType !== 'None'
+    ) {
+      <div class="league-item">
+        <img alt="{{ league.abbreviation }}" src="{{ league.logos[1] }}" />
+        <a routerLink="/leagues/{{ league.leagueType }}/week">
+          {{ league.displayName }}
+        </a>
+      </div>
+    }
+  }
+}

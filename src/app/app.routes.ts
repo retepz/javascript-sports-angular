@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router'
-import { SportLeaguesComponent } from '../routes/sport-leagues/sport-leagues.component'
 import { allSportTypes } from '@src/types/sport-type'
+import { SportLeaguesComponent } from './routes/sport-leagues/sport-leagues.component'
 
 export const routes: Routes = [
   {
