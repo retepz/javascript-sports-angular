@@ -11,9 +11,12 @@
   <nav>
     <div class="nav-item-container">
       @for (sportType of allSportTypes; track sportType) {
-        <a class="nav-item" routerLink="/sports/{{ sportType }}/leagues">{{
-          sportType
-        }}</a>
+        <a
+          class="nav-item"
+          routerLink="/sports/{{ sportType }}/leagues"
+          routerLinkActive="nav-item-active"
+          >{{ sportType }}</a
+        >
       }
     </div>
   </nav>

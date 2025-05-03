@@ -83,6 +83,11 @@ nav > * {
   margin: 1rem 1rem 1rem 0.5rem;
 }
 
+.nav-item-active {
+  padding-left: 0.5rem;
+  border-left: 0.2rem solid #6005b5;
+}
+
 .main-container {
   display: flex;
   flex-direction: row;

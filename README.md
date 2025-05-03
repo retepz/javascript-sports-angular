@@ -1,6 +1,6 @@
-# JavascriptSportsAngular
+# Welcome to Sports Angular!
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.10.
+An angular based frontend for [Sports Api](https://github.com/retepz/dotnet-sports-api)
 
 ## Development server
 
