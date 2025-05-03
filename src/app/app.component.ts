@@ -9,6 +9,6 @@ import { allSportTypes } from '@src/types/sport-type'
   styleUrl: './app.component.css',
 })
 export class AppComponent {
-  title = 'javascript-sports-angular'
+  title = 'Sports'
   readonly allSportTypes = allSportTypes
 }
