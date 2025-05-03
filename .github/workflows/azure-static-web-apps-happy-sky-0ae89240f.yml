@@ -42,7 +42,7 @@ jobs:
           # For more information regarding Static Web App workflow configurations, please visit: https://aka.ms/swaworkflowconfig
           app_location: '/' # App source code path
           api_location: '' # Api source code path - optional
-          output_location: 'dist/browser' # Built app content directory - optional
+          output_location: 'dist/javascript-sports-angular/browser' # Built app content directory - optional
           github_id_token: ${{ steps.idtoken.outputs.result }}
           app_build_command: 'npm run build:prod'
           ###### End of Repository/Build Configurations ######
