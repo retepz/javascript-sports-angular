@@ -1,0 +1,14 @@
+<div style="font-size: 2rem">{{ leagueType() }}</div>
+@if (getLeagueWeek.isFetching()) {
+  <div class="loading"></div>
+}
+
+@if (getLeagueWeek.data(); as leagueWeek) {
+  <a routerLink="/leagues/{{ leagueType() }}/week/events">
+    {{ leagueWeek?.displayName }}
+  </a>
+  <div>{{ leagueWeek?.startDate }}</div>
+  <div>{{ leagueWeek?.endDate }}</div>
+} @else {
+  <div>No games this week/Off season</div>
+}

@@ -26,6 +26,7 @@ export class SportLeaguesComponent implements OnInit, OnChanges {
     queryFn: () => {
       return lastValueFrom(this.sportLeaguesService.getLeagues(this.sport()))
     },
+    retry: 1,
   }))
 
   constructor(
