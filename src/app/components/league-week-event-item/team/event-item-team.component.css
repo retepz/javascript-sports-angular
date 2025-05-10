@@ -1,0 +1,80 @@
+/*https://css-tricks.com/almanac/rules/p/property/*/
+@property --containerteam-firstgridcolumns {
+  syntax: '*'; /*should be <track-list> but its not currently supported*/
+  inherits: true;
+  initial-value: 1fr auto;
+}
+
+.event-item-team-container {
+  row-gap: 0.5rem;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.event-item-team-container img {
+  max-width: 5rem;
+  grid-row: 1;
+}
+
+.event-item-team-container-first {
+  grid-template-columns: var(--containerteam-firstgridcolumns);
+}
+
+.event-item-team-container-first img {
+  grid-column: 2;
+}
+
+.event-item-team-container-second {
+  grid-template-columns: auto 1fr;
+}
+
+.event-item-team-container-second img {
+  grid-column: 1;
+}
+
+.event-item-team-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.event-item-team-info-first {
+  text-align: start;
+  grid-column: 1;
+}
+
+.event-item-team-info-second {
+  text-align: end;
+  grid-column: 2;
+}
+
+.event-item-team-home-away-first {
+  justify-self: start;
+  grid-column: 1;
+}
+
+.event-item-team-home-away-second {
+  justify-self: end;
+  grid-column: 2;
+}
+
+@media only screen and (max-width: 600px) {
+  .event-item-team-container-second {
+    grid-template-columns: var(--containerteam-firstgridcolumns);
+  }
+
+  .event-item-team-container-second img {
+    grid-column: 2;
+  }
+
+  .event-item-team-info-second {
+    text-align: start;
+    grid-column: 1;
+  }
+
+  .event-item-team-home-away-second {
+    justify-self: start;
+    grid-column: 1;
+  }
+}

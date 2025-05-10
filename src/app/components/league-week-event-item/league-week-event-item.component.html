@@ -1,0 +1,15 @@
+<div
+  style="
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    row-gap: 0.5rem;
+    column-gap: 1rem;
+  "
+>
+  <league-week-event-item-header [leagueEvent]="leagueEvent()" />
+  <event-item-teams-container [leagueEvent]="leagueEvent()">
+    <event-item-team [isFirst]="true" [team]="leagueEvent().firstTeam" />
+    <event-item-team [isFirst]="false" [team]="leagueEvent().secondTeam" />
+  </event-item-teams-container>
+</div>

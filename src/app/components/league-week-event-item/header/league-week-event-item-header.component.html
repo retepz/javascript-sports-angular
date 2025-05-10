@@ -1,0 +1,23 @@
+<div
+  style="
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: #1f2122;
+  "
+>
+  <div style="justify-self: start">{{ leftHeaderValue() }}</div>
+  <div style="justify-self: center">{{ centerHeaderValue() }}</div>
+  <div
+    style="
+      text-align: end;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    "
+  >
+    {{ rightHeaderValue() }}
+  </div>
+</div>

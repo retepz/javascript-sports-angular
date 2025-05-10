@@ -9,6 +9,6 @@
   </a>
   <div>{{ leagueWeek?.startDate }}</div>
   <div>{{ leagueWeek?.endDate }}</div>
-} @else {
+} @else if (!getLeagueWeek.isFetching()) {
   <div>No games this week/Off season</div>
 }

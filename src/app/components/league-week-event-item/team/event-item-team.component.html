@@ -1,0 +1,12 @@
+<div class="{{ containerClass() }}" style="{{ containerDynamicStyle() }}">
+  <img src="{{ team().logo }}" alt="{{ team().name }}" />
+  <div class="{{ teamInfoClass() }}">
+    <div style="font-size: 0.8rem">{{ team().record }}</div>
+    <div style="font-size: 1rem">{{ team().location }}</div>
+    <div style="font-size: 1rem">{{ team().name }}</div>
+    <div style="font-size: 1.1rem; font-weight: bold">
+      {{ team().score }}
+    </div>
+  </div>
+  <div class="{{ homeAwayClass() }}">{{ homeAwayText() }}</div>
+</div>

@@ -1,0 +1,15 @@
+.event-item-teams-container {
+  grid-row: 2;
+  column-gap: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .event-item-teams-container {
+    row-gap: 1rem;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+}

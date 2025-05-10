@@ -1,0 +1,9 @@
+@if (getLeagueEvents.isFetching()) {
+  <div class="loading"></div>
+}
+
+@if (getLeagueEvents.data(); as leagueEvents) {
+  @for (leagueEvent of leagueEvents; track leagueEvent.id) {
+    <league-week-event-item [leagueEvent]="leagueEvent" />
+  }
+}
