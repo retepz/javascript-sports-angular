@@ -1,8 +1,8 @@
-<div style="font-size: 2rem">{{ leagueType() }}</div>
 @if (getLeagueWeek.isFetching()) {
   <loading />
+} @else {
+  <div style="font-size: 2rem">{{ leagueType() }}</div>
 }
-
 @if (getLeagueWeek.data(); as leagueWeek) {
   <a routerLink="/leagues/{{ leagueType() }}/week/events">
     {{ leagueWeek?.displayName }}
