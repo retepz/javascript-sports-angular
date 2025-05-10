@@ -1,25 +1,6 @@
-<header>
-  <div class="header-logo-container">
-    <img alt="Angular Sports Logo" src="/images/logo.svg" />
-    <div style="">
-      <div>Sports</div>
-      <div>Angular</div>
-    </div>
-  </div>
-</header>
+<main-header />
 <div class="main-container">
-  <nav>
-    <div class="nav-item-container">
-      @for (sportType of allSportTypes; track sportType) {
-        <a
-          class="nav-item"
-          routerLink="/sports/{{ sportType }}/leagues"
-          routerLinkActive="nav-item-active"
-          >{{ sportType }}</a
-        >
-      }
-    </div>
-  </nav>
+  <main-nav />
   <main>
     <router-outlet />
   </main>

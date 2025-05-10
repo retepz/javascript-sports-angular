@@ -1,0 +1,29 @@
+<nav
+  style="{{
+    show ? 'width: 11rem;border-right: .1rem solid #a8acbd;' : 'width: 0;'
+  }}"
+>
+  <div
+    style="{{
+      show
+        ? 'display: flex; flex-direction: column;'
+        : 'display: none; flex-direction: column;'
+    }}"
+  >
+    @for (sportType of allSportTypes; track sportType) {
+      <a
+        routerLinkActive="active-nav-item"
+        class="nav-item"
+        routerLink="/sports/{{ sportType }}/leagues"
+      >
+        {{ sportType }}
+      </a>
+    }
+  </div>
+  <button class="toggle-nav" title="Toggle Nav" (click)="handleNavToggle()">
+    <img
+      alt="Toggle Nav"
+      src="{{ show ? '/images/close.svg' : '/images/open.svg' }}"
+    />
+  </button>
+</nav>

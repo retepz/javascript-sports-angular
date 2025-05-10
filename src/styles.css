@@ -37,57 +37,6 @@ a:visited {
   }
 }
 
-header {
-  height: 5rem;
-  background-color: #2f0259;
-  margin-bottom: 0.5rem;
-  display: grid;
-}
-
-.header-logo-container {
-  align-self: center;
-  display: flex;
-  margin-left: 0.5rem;
-}
-
-.header-logo-container img {
-  width: 4rem;
-}
-
-.header-logo-container div {
-  align-content: center;
-  font-size: 1.5rem;
-}
-
-nav {
-  flex-shrink: 0;
-}
-
-nav,
-nav > * {
-  font-size: 1.2rem;
-  width: 11rem;
-  max-width: 11rem;
-  border-right: 0.1rem solid #a8acbd;
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-}
-
-.nav-item-container {
-  display: flex;
-  flex-direction: column;
-}
-
-.nav-item {
-  display: flex;
-  margin: 1rem 1rem 1rem 0.5rem;
-}
-
-.nav-item-active {
-  padding-left: 0.5rem;
-  border-left: 0.2rem solid #6005b5;
-}
-
 .main-container {
   display: flex;
   flex-direction: row;
