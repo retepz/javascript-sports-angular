@@ -1,4 +1,8 @@
-main-nav,
-main-header {
-  display: contents;
+.main-container {
+  display: flex;
+  flex-direction: row;
+}
+
+main {
+  flex-grow: 1;
 }

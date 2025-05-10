@@ -11,9 +11,10 @@ import { SportTypes } from '@src/types/sport-type'
 import { RouterLink } from '@angular/router'
 import { injectQuery } from '@tanstack/angular-query-experimental'
 import { lastValueFrom } from 'rxjs'
+import { LoadingComponent } from '../../components/loading/loading.component'
 
 @Component({
-  imports: [RouterLink],
+  imports: [RouterLink, LoadingComponent],
   selector: 'sport-leagues',
   templateUrl: './sport-leagues.component.html',
   styleUrl: './sport-leagues.component.css',

@@ -1,5 +1,3 @@
-/* You can add global styles to this file, and also import other style files */
-
 html,
 body {
   @media (prefers-color-scheme: dark) {
@@ -14,42 +12,20 @@ a:visited {
   color: inherit;
 }
 
-.loading {
-  width: 50px;
-  --b: 8px;
-  aspect-ratio: 1;
-  border-radius: 50%;
-  background: #514b82;
-  -webkit-mask:
-    repeating-conic-gradient(#0000 0deg, #000 1deg 70deg, #0000 71deg 90deg),
-    radial-gradient(
-      farthest-side,
-      #0000 calc(100% - var(--b) - 1px),
-      #000 calc(100% - var(--b))
-    );
-  -webkit-mask-composite: destination-in;
-  mask-composite: intersect;
-  animation: l5 1s infinite;
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
 }
-@keyframes l5 {
-  to {
-    transform: rotate(0.5turn);
-  }
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
 }
-
-.main-container {
-  display: flex;
-  flex-direction: row;
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
 }
-
-main {
-  flex-grow: 1;
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
 }
-
-main > * {
-  display: grid;
-  row-gap: 1.5rem;
-  margin: 1rem;
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
 }
 
 router-outlet {

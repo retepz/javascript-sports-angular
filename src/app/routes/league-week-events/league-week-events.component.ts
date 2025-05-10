@@ -13,9 +13,10 @@ import { LeagueTypes } from '@src/types/league-types'
 import { HttpResponse } from '@angular/common/http'
 import { SportLeagueEvent } from '@src/types/sport-league-event'
 import { LeagueWeekEventItemComponent } from '../../components/league-week-event-item/league-week-event-item.component'
+import { LoadingComponent } from '../../components/loading/loading.component'
 
 @Component({
-  imports: [LeagueWeekEventItemComponent],
+  imports: [LeagueWeekEventItemComponent, LoadingComponent],
   selector: 'league-week-events',
   templateUrl: './league-week-events.component.html',
   styleUrl: './league-week-events.component.css',

@@ -1,9 +1,12 @@
 @if (getLeagueEvents.isFetching()) {
-  <div class="loading"></div>
+  <loading />
 }
 
 @if (getLeagueEvents.data(); as leagueEvents) {
+  <div style="font-size: 2rem">{{ leagueType() }}</div>
   @for (leagueEvent of leagueEvents; track leagueEvent.id) {
     <league-week-event-item [leagueEvent]="leagueEvent" />
   }
+} @else if (!getLeagueEvents.isFetching()) {
+  <div>No games this week/Off season</div>
 }

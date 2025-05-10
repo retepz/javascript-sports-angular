@@ -1,6 +1,6 @@
 <div style="font-size: 2rem">{{ leagueType() }}</div>
 @if (getLeagueWeek.isFetching()) {
-  <div class="loading"></div>
+  <loading />
 }
 
 @if (getLeagueWeek.data(); as leagueWeek) {

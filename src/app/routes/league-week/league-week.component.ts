@@ -13,9 +13,10 @@ import { lastValueFrom } from 'rxjs'
 import { LeagueTypes } from '@src/types/league-types'
 import { HttpResponse } from '@angular/common/http'
 import { LeagueWeek } from '@src/types/league-week'
+import { LoadingComponent } from '../../components/loading/loading.component'
 
 @Component({
-  imports: [RouterLink],
+  imports: [RouterLink, LoadingComponent],
   selector: 'league-week',
   templateUrl: './league-week.component.html',
   styleUrl: './league-week.component.css',
